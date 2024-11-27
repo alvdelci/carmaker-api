@@ -4,6 +4,7 @@ import io.github.alvdelci.springarchitecture.carmaker.Engine;
 import io.github.alvdelci.springarchitecture.carmaker.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 //Classe de configuracoes para criar e registrar beans no spring container
 @Configuration
@@ -20,6 +21,7 @@ public class CarmakerConfiguration {
         return engine;
     }
 
+    @Primary //Indica que esse bean deve ser utilizado como padrao se nao for passado na injecao
     @Bean(name = "eletricEngine")
     public Engine eletricEngine() {
         var engine = new Engine();
