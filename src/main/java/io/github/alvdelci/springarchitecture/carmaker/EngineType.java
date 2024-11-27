@@ -1,7 +1,7 @@
 package io.github.alvdelci.springarchitecture.carmaker;
 
 public enum EngineType {
-    ASPIRADO,
+    ASPIRATED,
     TURBO,
-    ELETRICO
+    ELETRIC
 }
