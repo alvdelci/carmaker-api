@@ -2,3 +2,5 @@
 spring:
   application:
     name: Spring Architecture
+  jpa:
+    show_sql: true
