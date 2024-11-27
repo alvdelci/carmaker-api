@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FactoryTestController {
 
     @Autowired
-    @Qualifier("turboEngine")
+    //@Qualifier("turboEngine")
+    @Turbo //Inject o aspiratedEngine que criamos como annotation
 //Isso é uma injecao de dependencia. Injetando o bean Engine, do configuration, para nao precisar instanciar.
     private Engine engine;
 
