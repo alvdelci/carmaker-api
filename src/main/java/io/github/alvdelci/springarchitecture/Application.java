@@ -29,7 +29,11 @@ public class Application {
 		String applicationName = environment.getProperty("spring.application.name");
 		System.out.println("Nome da aplicação: " + applicationName);
 
+		//Utilizando Value annotation
 		applicationContext.getBean(ValueAnnotationExample.class).print();
+
+		AppProperties appProperties = applicationContext.getBean(AppProperties.class);
+		System.out.println(appProperties.getDefaultColour());
 	}
 
 }
