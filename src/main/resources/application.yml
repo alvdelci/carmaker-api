@@ -4,3 +4,5 @@ spring:
     name: Spring Architecture
   jpa:
     show_sql: true
+#  main:
+#    lazy-initialization: true #Definne todos os beans como lazy (Usados apenas em casos especificos. Quando usado, faz sentido utlizar @Lazy(false) para desabilitar o lazy bean
