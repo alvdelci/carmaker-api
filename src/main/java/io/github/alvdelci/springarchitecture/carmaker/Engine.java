@@ -4,7 +4,7 @@ public class Engine {
     private String model;
     private Integer horse;
     private Integer cylinders;
-    private Double tankCapacity;
+    private Double cylinderCapacity;
     private EngineType type;
 
     //Getters and Setters
@@ -32,12 +32,12 @@ public class Engine {
         this.cylinders = cylinders;
     }
 
-    public Double getTankCapacity() {
-        return tankCapacity;
+    public Double getCylinderCapacity() {
+        return cylinderCapacity;
     }
 
-    public void setTankCapacity(Double tankCapacity) {
-        this.tankCapacity = tankCapacity;
+    public void setCylinderCapacity(Double cylinderCapacity) {
+        this.cylinderCapacity = cylinderCapacity;
     }
 
     public EngineType getType() {
@@ -46,5 +46,16 @@ public class Engine {
 
     public void setType(EngineType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "model='" + model + '\'' +
+                ", horse=" + horse +
+                ", cylinders=" + cylinders +
+                ", cylinderCapacity=" + cylinderCapacity +
+                ", type=" + type +
+                '}';
     }
 }
